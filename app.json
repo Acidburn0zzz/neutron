@@ -20,7 +20,7 @@
             "required": true
         },
         "NEUTRON_STORAGE": {
-            "description": "Storage provider used to host updates (one of 'azure' or 'amazon')",
+            "description": "Storage provider used to host updates (one of 'azure', 'amazon' or 'github')",
             "value": "azure",
             "required": true
         },
@@ -46,6 +46,16 @@
         },
         "NEUTRON_STORAGE_AMAZON_REGION": {
             "description": "Amazon S3 storage region (http://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region)",
+            "value": "",
+            "required": false
+        },
+        "NEUTRON_STORAGE_GITHUB_TOKEN": {
+            "description": "Github personal access token",
+            "value": "",
+            "required": false
+        },
+        "NEUTRON_STORAGE_GITHUB_REPOSITORIES": {
+            "description": "List of allowed repositories (must be a valid JSON string)",
             "value": "",
             "required": false
         }
